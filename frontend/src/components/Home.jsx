@@ -9,7 +9,7 @@ const HomeStyle = styled.div`
   max-width: 80vw;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 110px;
   margin: 0 auto;
   padding-top: 20px;
 `;

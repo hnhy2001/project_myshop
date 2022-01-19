@@ -43,7 +43,7 @@ export default function CartItem(props) {
             product_id: props.id
         })
         .then(data=>{
-          message.success("Nam đã ko có người yêu");
+          message.success("Đã xóa sản phẩm khỏi giỏ hàng");
           props.getProduct()
         })
         .catch(err=>console.log(err))

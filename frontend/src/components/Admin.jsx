@@ -161,7 +161,7 @@ export default class Admin extends React.Component {
               <Button type='primary' danger onClick={()=>{
                    postRequest("/notication/delete_noti/", {
                        id: text.id,
-                       user_id: localStorage.getItem("id")
+                       user_id: text.user_id
                    })
                    .then(data=> {message.warning("Đơng hàng đã bị từ chối");
                     getRequest("/order/")

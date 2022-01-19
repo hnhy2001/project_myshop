@@ -14,12 +14,13 @@ import { getRequest, postRequest } from "../hooks/api";
 import { useStore } from "../hooks/store";
 const NavBarStyle = styled.div`
   display: flex;
-  max-width: 80vw;
+  max-width: 100vw;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
   padding: 10px;
-
+  background-color: #e8e8e8 ;  
+  
 `;
 
 const { Search } = Input;
@@ -74,7 +75,7 @@ export default function NavBar() {
             <Register onCancel={onCancel} />
             <p style={{ borderTop: "1px solid #efefef" }}>
               Do you already have an account?
-              <Button type="link" onClick={() => setIsLogin(true)}>
+              <Button type="link" style={{color:"#f0aa14"}} onClick={() => setIsLogin(true)}>
                 Login
               </Button>
             </p>
@@ -85,7 +86,7 @@ export default function NavBar() {
         <img
           src={logo}
           alt="logo"
-          style={{ width: "90px", marginRight: "40px", cursor: "pointer" }}
+          style={{ width: "150px", marginRight: "40px", cursor: "pointer", height: "55px", }}
           onClick={handleLogo}
         />
         <Search
@@ -98,12 +99,13 @@ export default function NavBar() {
             .then(data => {setProducts(data);setLoading(false)})
             .catch(err=>{message.warning("Không tồn tại sản phẩm");setLoading(false)})
           }}
-          style={{ width: "400px" }}
+          style={{ width: "400px",}}
+          
         />
       </div>
       {!userName ? (
         <div>
-          <Button type="primary" onClick={handleLogin}>
+          <Button style={{backgroundColor: "#f0aa14", color:"white", marginTop:"10px",borderRadius:"10px"}} onClick={handleLogin}>
             Login/Register
           </Button>
         </div>

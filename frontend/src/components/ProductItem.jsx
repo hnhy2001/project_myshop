@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 
 const ProductItemStyle = styled.div`
-  width: 380px;
-  height: 390px;
+  width: 340px;
+  height: 350px;
   cursor: pointer;
   background-color: white;
   border-radius: 5px;

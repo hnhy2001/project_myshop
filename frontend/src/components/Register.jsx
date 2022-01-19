@@ -22,8 +22,8 @@ export default function Register() {
 
   return (
     <RegisterStyle>
-      <h1 style={{ fontWeight: "750" }}>Welcome to C</h1>
-      <Button type="primary" block style={{ marginBottom: "10px" }}>
+      <h1 style={{ fontWeight: "750" }}></h1>
+      <Button  block style={{ marginBottom: "10px", backgroundColor: "#f0aa14"}}>
         Register with Facebook
       </Button>
       <Button block>Register with Google</Button>
@@ -33,22 +33,28 @@ export default function Register() {
           label={<span style={{ fontWeight: "500" }}>User Name</span>}
           name="username"
         >
-          <Input />
+          <Input placeholder="VD: Dương Tùng Anh" />
         </Form.Item>
         <Form.Item
           label={<span style={{ fontWeight: "500" }}>Phone</span>}
           name="phone"
         >
-          <Input />
+          <Input placeholder="VD: 0988489JQK"/>
+        </Form.Item>
+        <Form.Item
+          label={<span style={{ fontWeight: "500" }}>Gmail</span>}
+          name="Gmail"
+        >
+          <Input placeholder="VD: tunganhdng@gmail.com" />
         </Form.Item>
         <Form.Item
           label={<span style={{ fontWeight: "500" }}>Password</span>}
           name="password"
         >
-          <Input.Password />
+          <Input.Password placeholder="VD: Nhập mật khẩu" />
         </Form.Item>
         <Form.Item>
-          <Button type="primary" onClick={handleRegister}>
+          <Button style={{backgroundColor: "#f0aa14"}} onClick={handleRegister}>
             Register
           </Button>
         </Form.Item>

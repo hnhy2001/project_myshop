@@ -9,7 +9,7 @@ const CartStyle = styled.div`
   margin: 0 auto;
   margin-top: 20px;
   padding-top: 20px;
-  height: calc(100vh - 100px);
+  
   padding: 20px;
   border-radius: 5px;
 `;
@@ -44,7 +44,7 @@ export default function Cart() {
             marginRight: "20px",
             display: "flex",
             flexDirection: "column",
-            height: "100%",
+            
           }}
         >
           <div
@@ -76,12 +76,12 @@ export default function Cart() {
           <h1>Tổng</h1>
           <p style={{ fontSize: "20px" }}>{sumPrice + 10000 + " đ"}</p>
           <Divider />
-          <Button disabled={sumPrice===0?true:false} type="primary" block onClick={  ()=>{
+          <Button disabled={sumPrice===0?true:false} style={{backgroundColor: "#f0aa14"}} block onClick={  ()=>{
             postRequest("/order/add_order/",{
               user_id: localStorage.getItem("id"),
               price: sumPrice + 10000,
             })
-            .then(data=> message.success("Nam có người yêu"))
+            .then(data=> message.success("Đã gửi đơn hàng! Hãy chờ xác nhận"))
             .catch(err=> message.error(err))
              postRequest("/user/hiden_cart/",{
               id: localStorage.getItem("id")

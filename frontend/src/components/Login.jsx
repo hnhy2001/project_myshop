@@ -27,6 +27,7 @@ export default function Login(props) {
         else{
           navigate("/")
           props.setIsAdmin(false)
+          window.location.reload();
         }
       })
       .catch((err) => console.log(err));
@@ -35,8 +36,8 @@ export default function Login(props) {
 
   return (
     <LoginStyle>
-      <h1 style={{ fontWeight: "750" }}>Welcome to C</h1>
-      <Button type="primary" block style={{ marginBottom: "10px" }}>
+      <h1 style={{ fontWeight: "750" }}>Welcome to My Shop</h1>
+      <Button block style={{ marginBottom: "10px",backgroundColor: "#f0aa14"}}>
         Login with Facebook
       </Button>
       <Button block>Login with Google</Button>
@@ -55,7 +56,7 @@ export default function Login(props) {
           <Input.Password />
         </Form.Item>
         <Form.Item>
-          <Button type="primary" onClick={handleLogin}>
+          <Button style={{backgroundColor: "#f0aa14"}} onClick={handleLogin}>
             Login
           </Button>
         </Form.Item>
