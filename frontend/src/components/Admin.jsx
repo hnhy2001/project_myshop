@@ -140,7 +140,7 @@ export default class Admin extends React.Component {
                        id: text.id,
                        user_id: text.user_id
                    })
-                   .then(data=> {message.success("Đơng hàng đã được chấp nhận");
+                   .then(data=> {message.success("Đơn hàng đã được chấp nhận");
                     getRequest("/order/")
                    .then(data => {
                      let dt = data.results.map(e=> (
@@ -163,7 +163,7 @@ export default class Admin extends React.Component {
                        id: text.id,
                        user_id: text.user_id
                    })
-                   .then(data=> {message.warning("Đơng hàng đã bị từ chối");
+                   .then(data=> {message.warning("Đơn hàng đã bị từ chối");
                     getRequest("/order/")
                    .then(data => {
                      let dt = data.results.map(e=> (

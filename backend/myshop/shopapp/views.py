@@ -16,7 +16,7 @@ class NoticationView(viewsets.ModelViewSet):
         order = Order.objects.get(pk = request.data["id"])
         noti = Notication()
         user = User.objects.get(pk = request.data["user_id"])
-        noti.content = "Đơn hàng số " + str(request.data["id"]) + " đã được chấp nhận"
+        noti.content = "Đơn hàng của bạn đã được chấp nhận"
         noti.user = user
         noti.save()
         order.active = False
@@ -30,7 +30,7 @@ class NoticationView(viewsets.ModelViewSet):
         order = Order.objects.get(pk = request.data["id"])
         noti = Notication()
         user = User.objects.get(pk = request.data["user_id"])
-        noti.content = "Đơn hàng số " + str(request.data["id"]) + " đã bị từ chối"
+        noti.content = "Đơn hàng của bạn đã bị từ chối"
         noti.user = user
         noti.save()
         order.active = False

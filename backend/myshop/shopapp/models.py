@@ -12,7 +12,7 @@ class Product(models.Model):
     avatar = models.ImageField(upload_to='img/%Y/%m')
     created_date = models.DateField(auto_now_add=True)
     updated_date = models.DateField(auto_now=True)
-    product_price = models.FloatField(null=False)
+    product_price = models.CharField(max_length=250, null=False, unique=True)
     active = models.BooleanField(default=True)
     content = models.TextField(null=True, blank=True)
 
