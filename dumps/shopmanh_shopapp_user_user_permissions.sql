@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: myshop
+-- Host: 127.0.0.1    Database: shopmanh
 -- ------------------------------------------------------
 -- Server version	8.0.27
 
@@ -16,29 +16,31 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `django_content_type`
+-- Table structure for table `shopapp_user_user_permissions`
 --
 
-DROP TABLE IF EXISTS `django_content_type`;
+DROP TABLE IF EXISTS `shopapp_user_user_permissions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `django_content_type` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `app_label` varchar(100) NOT NULL,
-  `model` varchar(100) NOT NULL,
+CREATE TABLE `shopapp_user_user_permissions` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `user_id` bigint NOT NULL,
+  `permission_id` int NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `django_content_type_app_label_model_76bd3d3b_uniq` (`app_label`,`model`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  UNIQUE KEY `shopapp_user_user_permis_user_id_permission_id_9889b8b7_uniq` (`user_id`,`permission_id`),
+  KEY `shopapp_user_user_pe_permission_id_c7dc8aa0_fk_auth_perm` (`permission_id`),
+  CONSTRAINT `shopapp_user_user_pe_permission_id_c7dc8aa0_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`),
+  CONSTRAINT `shopapp_user_user_pe_user_id_cb330252_fk_shopapp_u` FOREIGN KEY (`user_id`) REFERENCES `shopapp_user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `django_content_type`
+-- Dumping data for table `shopapp_user_user_permissions`
 --
 
-LOCK TABLES `django_content_type` WRITE;
-/*!40000 ALTER TABLE `django_content_type` DISABLE KEYS */;
-INSERT INTO `django_content_type` VALUES (1,'admin','logentry'),(3,'auth','group'),(2,'auth','permission'),(4,'contenttypes','contenttype'),(5,'sessions','session'),(9,'shopapp','notication'),(8,'shopapp','order'),(7,'shopapp','product'),(6,'shopapp','user');
-/*!40000 ALTER TABLE `django_content_type` ENABLE KEYS */;
+LOCK TABLES `shopapp_user_user_permissions` WRITE;
+/*!40000 ALTER TABLE `shopapp_user_user_permissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `shopapp_user_user_permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -50,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-19 21:39:47
+-- Dump completed on 2022-01-20 11:16:31

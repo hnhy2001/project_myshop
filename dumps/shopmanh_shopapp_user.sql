@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: myshop
+-- Host: 127.0.0.1    Database: shopmanh
 -- ------------------------------------------------------
 -- Server version	8.0.27
 
@@ -38,7 +38,7 @@ CREATE TABLE `shopapp_user` (
   `role` varchar(50) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -47,7 +47,7 @@ CREATE TABLE `shopapp_user` (
 
 LOCK TABLES `shopapp_user` WRITE;
 /*!40000 ALTER TABLE `shopapp_user` DISABLE KEYS */;
-INSERT INTO `shopapp_user` VALUES (1,'pbkdf2_sha256$320000$RiTBCD3K7iKgqi13OB6QqZ$As05c8lHS9hG8MFD1xMbACWcC/StXqQUawJm5ppZ56A=','2022-01-19 13:56:44.764146',1,'admin','','','doxuanmanh@gmail.com',1,1,'2022-01-15 16:26:38.876917','',''),(2,'admin','2022-01-15 16:32:13.000000',0,'manh_admin','','','',0,1,'2022-01-15 16:32:07.000000','123456789','admin'),(3,'hnhy',NULL,0,'hnhy','','','',0,1,'2022-01-15 16:33:30.761834','0354137873','user'),(4,'12345',NULL,0,'manh','','','',0,1,'2022-01-15 17:23:00.767877','12345','user'),(5,'admin1','2022-01-15 17:48:10.000000',0,'admin1','','','',0,1,'2022-01-15 17:48:00.000000','12345','admin'),(7,'123',NULL,0,'manh29','','','',0,1,'2022-01-15 17:49:36.494225','123','user'),(9,'hnhy123123',NULL,0,'hnhy213123','','','',0,1,'2022-01-19 06:09:19.808357','123123','user'),(10,'123',NULL,0,'manhdzai','','','',0,1,'2022-01-19 13:47:47.753821','','user');
+INSERT INTO `shopapp_user` VALUES (1,'pbkdf2_sha256$320000$zRPKBfJdYo1es9aw6vAe0f$wY2jyb2jXDCLU8QYUfdC+UAsj1XAxH3fUBBVdMqft4Y=','2022-01-20 03:30:54.727073',1,'admin','','','manhdop01@gmail.com',1,1,'2022-01-20 03:30:39.418479','',''),(4,'123456','2022-01-20 03:32:46.000000',0,'adminweb','','','sonngu@gmail.com',0,1,'2022-01-20 03:32:38.000000','123','admin'),(5,'123',NULL,0,'manhdzai','','','',0,1,'2022-01-20 03:34:01.379920','0354137873','user');
 /*!40000 ALTER TABLE `shopapp_user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -60,4 +60,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-19 21:39:48
+-- Dump completed on 2022-01-20 11:16:30

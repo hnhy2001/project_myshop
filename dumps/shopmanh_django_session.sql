@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: myshop
+-- Host: 127.0.0.1    Database: shopmanh
 -- ------------------------------------------------------
 -- Server version	8.0.27
 
@@ -37,7 +37,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('0kfmakpcb9rbi47fl76tmm80p5v3kyrg','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1nABS8:UzynJjjFqTrOHYPnuq1TDziEPYpDIBKd1SGM_E04TcE','2022-02-02 13:56:44.770128'),('f2ysfyy7rolzbw746b07kl1klcqh5qgq','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1n9rCh:4MEZBrMYRYWxyQJpc3CAsElI4oFz63ye3043pi9wnvY','2022-02-01 16:19:27.519912'),('iplxqmxy5wsjutuvdprhsyev6kr899nh','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1n8mSU:zx2u_mNEtEYQq8Kf_PhKS3lIEq471NSklBXl530QpYI','2022-01-29 17:03:18.823250'),('lb9nq0nb69p04oan568ctg6brgc022in','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1n8ltS:K-F7reR8EVRX6RQjf7Sv8CL0Y0wDghVGgtHmHIKYskk','2022-01-29 16:27:06.218571'),('xz6gfjfjc9wyu5wivs3ed73ln6mpnl3s','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1nA2qv:KPkTKkQzjMFTHSWsc5pepOuCd681tIYhz0WIOgKx5WQ','2022-02-02 04:45:45.794258');
+INSERT INTO `django_session` VALUES ('j1byt8pkex4ypf16sa00c292tou0iu7g','.eJxVjDsOwjAQBe_iGlm2E_8o6TmDtetd4wBypDipEHeHSCmgfTPzXiLBtta0dV7SROIstDj9bgj5wW0HdId2m2We27pMKHdFHrTL60z8vBzu30GFXr-18S7bMLIZPVuFYAORR4agiyNntQaNHpEGq6JmxRRiyaVEP7hsFIF4fwDoCzhl:1nAOA2:4fwvaAT97FInNvzF6DUImX7Oy-MrQ_4U-pqCgPCLG_w','2022-02-03 03:30:54.733052');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-19 21:39:47
+-- Dump completed on 2022-01-20 11:16:30

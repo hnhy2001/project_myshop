@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: myshop
+-- Host: 127.0.0.1    Database: shopmanh
 -- ------------------------------------------------------
 -- Server version	8.0.27
 
@@ -117,7 +117,7 @@ CREATE TABLE `django_admin_log` (
   CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
   CONSTRAINT `django_admin_log_user_id_c564eba6_fk_shopapp_user_id` FOREIGN KEY (`user_id`) REFERENCES `shopapp_user` (`id`),
   CONSTRAINT `django_admin_log_chk_1` CHECK ((`action_flag` >= 0))
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -126,7 +126,7 @@ CREATE TABLE `django_admin_log` (
 
 LOCK TABLES `django_admin_log` WRITE;
 /*!40000 ALTER TABLE `django_admin_log` DISABLE KEYS */;
-INSERT INTO `django_admin_log` VALUES (1,'2022-01-15 16:32:38.470353','2','manh_admin',1,'[{\"added\": {}}]',6,1),(2,'2022-01-15 17:07:59.399875','1','Product object (1)',1,'[{\"added\": {}}]',7,1),(3,'2022-01-15 17:20:55.282277','1','Product object (1)',2,'[]',7,1),(4,'2022-01-15 17:48:23.328410','5','admin1',1,'[{\"added\": {}}]',6,1),(5,'2022-01-17 16:24:10.740947','2','Product object (2)',1,'[{\"added\": {}}]',7,1),(6,'2022-01-18 16:39:02.077679','2','Product object (2)',3,'',7,1),(7,'2022-01-18 16:39:02.091640','1','Product object (1)',3,'',7,1),(8,'2022-01-18 16:42:33.349839','3','Product object (3)',1,'[{\"added\": {}}]',7,1),(9,'2022-01-18 16:43:18.210252','4','Product object (4)',1,'[{\"added\": {}}]',7,1),(10,'2022-01-18 16:43:41.759318','5','Product object (5)',1,'[{\"added\": {}}]',7,1),(11,'2022-01-18 16:44:08.634825','6','Product object (6)',1,'[{\"added\": {}}]',7,1),(12,'2022-01-18 16:44:35.558724','7','Product object (7)',1,'[{\"added\": {}}]',7,1),(13,'2022-01-18 16:44:59.568421','8','Product object (8)',1,'[{\"added\": {}}]',7,1),(14,'2022-01-18 16:45:22.561380','9','Product object (9)',1,'[{\"added\": {}}]',7,1),(15,'2022-01-18 16:45:46.938299','10','Product object (10)',1,'[{\"added\": {}}]',7,1),(16,'2022-01-18 16:49:32.606758','11','Product object (11)',1,'[{\"added\": {}}]',7,1),(17,'2022-01-18 17:29:55.484778','12','Product object (12)',1,'[{\"added\": {}}]',7,1),(18,'2022-01-19 04:48:11.482313','12','Product object (12)',2,'[{\"changed\": {\"fields\": [\"Active\"]}}]',7,1),(19,'2022-01-19 04:56:34.214061','13','Product object (13)',1,'[{\"added\": {}}]',7,1),(20,'2022-01-19 08:53:09.636721','14','Product object (14)',1,'[{\"added\": {}}]',7,1),(21,'2022-01-19 08:54:09.768044','5','Product object (5)',2,'[{\"changed\": {\"fields\": [\"Product name\"]}}]',7,1),(22,'2022-01-19 14:00:17.130219','13','Product object (13)',2,'[{\"changed\": {\"fields\": [\"Product price\"]}}]',7,1),(23,'2022-01-19 14:00:29.831388','13','Product object (13)',2,'[{\"changed\": {\"fields\": [\"Product price\"]}}]',7,1),(24,'2022-01-19 14:18:13.662058','13','Product object (13)',2,'[{\"changed\": {\"fields\": [\"Product price\"]}}]',7,1);
+INSERT INTO `django_admin_log` VALUES (1,'2022-01-20 03:31:41.334509','1','Product object (1)',1,'[{\"added\": {}}]',7,1),(2,'2022-01-20 03:33:39.617707','4','adminweb',1,'[{\"added\": {}}]',6,1),(3,'2022-01-20 03:33:52.093752','3','trucweb',3,'',6,1),(4,'2022-01-20 03:36:25.084687','2','Product object (2)',1,'[{\"added\": {}}]',7,1),(5,'2022-01-20 03:36:56.409626','3','Product object (3)',1,'[{\"added\": {}}]',7,1),(6,'2022-01-20 03:37:19.187187','4','Product object (4)',1,'[{\"added\": {}}]',7,1),(7,'2022-01-20 03:38:07.657115','5','Product object (5)',1,'[{\"added\": {}}]',7,1),(8,'2022-01-20 03:38:27.606497','6','Product object (6)',1,'[{\"added\": {}}]',7,1),(9,'2022-01-20 03:39:05.377152','7','Product object (7)',1,'[{\"added\": {}}]',7,1),(10,'2022-01-20 03:40:10.751372','8','Product object (8)',1,'[{\"added\": {}}]',7,1),(11,'2022-01-20 03:41:43.475126','9','Product object (9)',1,'[{\"added\": {}}]',7,1),(12,'2022-01-20 04:07:40.104098','2','Product object (2)',2,'[{\"changed\": {\"fields\": [\"Product name\", \"Avatar\"]}}]',7,1),(13,'2022-01-20 04:08:12.147067','10','Product object (10)',1,'[{\"added\": {}}]',7,1),(14,'2022-01-20 04:08:44.677406','2','Product object (2)',2,'[{\"changed\": {\"fields\": [\"Content\"]}}]',7,1),(15,'2022-01-20 04:09:42.014417','11','Product object (11)',1,'[{\"added\": {}}]',7,1),(16,'2022-01-20 04:11:15.030540','12','Product object (12)',1,'[{\"added\": {}}]',7,1),(17,'2022-01-20 04:13:09.727044','10','Product object (10)',2,'[{\"changed\": {\"fields\": [\"Avatar\"]}}]',7,1);
 /*!40000 ALTER TABLE `django_admin_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -169,7 +169,7 @@ CREATE TABLE `django_migrations` (
   `name` varchar(255) NOT NULL,
   `applied` datetime(6) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -178,7 +178,7 @@ CREATE TABLE `django_migrations` (
 
 LOCK TABLES `django_migrations` WRITE;
 /*!40000 ALTER TABLE `django_migrations` DISABLE KEYS */;
-INSERT INTO `django_migrations` VALUES (1,'contenttypes','0001_initial','2022-01-15 16:24:07.379279'),(2,'contenttypes','0002_remove_content_type_name','2022-01-15 16:24:07.484664'),(3,'auth','0001_initial','2022-01-15 16:24:07.899476'),(4,'auth','0002_alter_permission_name_max_length','2022-01-15 16:24:08.009190'),(5,'auth','0003_alter_user_email_max_length','2022-01-15 16:24:08.023144'),(6,'auth','0004_alter_user_username_opts','2022-01-15 16:24:08.032119'),(7,'auth','0005_alter_user_last_login_null','2022-01-15 16:24:08.047086'),(8,'auth','0006_require_contenttypes_0002','2022-01-15 16:24:08.056057'),(9,'auth','0007_alter_validators_add_error_messages','2022-01-15 16:24:08.064034'),(10,'auth','0008_alter_user_username_max_length','2022-01-15 16:24:08.076003'),(11,'auth','0009_alter_user_last_name_max_length','2022-01-15 16:24:08.083680'),(12,'auth','0010_alter_group_name_max_length','2022-01-15 16:24:08.115595'),(13,'auth','0011_update_proxy_permissions','2022-01-15 16:24:08.130560'),(14,'auth','0012_alter_user_first_name_max_length','2022-01-15 16:24:08.141526'),(15,'shopapp','0001_initial','2022-01-15 16:24:09.280235'),(16,'admin','0001_initial','2022-01-15 16:24:09.461045'),(17,'admin','0002_logentry_remove_auto_add','2022-01-15 16:24:09.491062'),(18,'admin','0003_logentry_add_action_flag_choices','2022-01-15 16:24:09.508015'),(19,'sessions','0001_initial','2022-01-15 16:24:09.689418'),(20,'shopapp','0002_notication_casee_notication_updated_date_and_more','2022-01-15 16:24:09.849317'),(21,'shopapp','0003_alter_user_cart','2022-01-15 16:24:09.862317'),(22,'shopapp','0004_order_active','2022-01-15 16:24:09.915450'),(23,'shopapp','0005_product_content','2022-01-15 16:24:09.970700'),(24,'shopapp','0006_order_phone','2022-01-15 16:24:10.044752'),(25,'shopapp','0007_alter_user_cart','2022-01-15 16:31:46.002651'),(26,'shopapp','0008_alter_order_product_id','2022-01-15 16:31:46.020610'),(27,'shopapp','0009_alter_product_product_price','2022-01-19 14:12:47.713632');
+INSERT INTO `django_migrations` VALUES (1,'contenttypes','0001_initial','2022-01-20 03:29:04.253190'),(2,'contenttypes','0002_remove_content_type_name','2022-01-20 03:29:04.392035'),(3,'auth','0001_initial','2022-01-20 03:29:04.921894'),(4,'auth','0002_alter_permission_name_max_length','2022-01-20 03:29:05.013539'),(5,'auth','0003_alter_user_email_max_length','2022-01-20 03:29:05.037641'),(6,'auth','0004_alter_user_username_opts','2022-01-20 03:29:05.047616'),(7,'auth','0005_alter_user_last_login_null','2022-01-20 03:29:05.063543'),(8,'auth','0006_require_contenttypes_0002','2022-01-20 03:29:05.069551'),(9,'auth','0007_alter_validators_add_error_messages','2022-01-20 03:29:05.080498'),(10,'auth','0008_alter_user_username_max_length','2022-01-20 03:29:05.093965'),(11,'auth','0009_alter_user_last_name_max_length','2022-01-20 03:29:05.106916'),(12,'auth','0010_alter_group_name_max_length','2022-01-20 03:29:05.135947'),(13,'auth','0011_update_proxy_permissions','2022-01-20 03:29:05.147944'),(14,'auth','0012_alter_user_first_name_max_length','2022-01-20 03:29:05.162877'),(15,'shopapp','0001_initial','2022-01-20 03:29:06.433215'),(16,'admin','0001_initial','2022-01-20 03:29:06.795802'),(17,'admin','0002_logentry_remove_auto_add','2022-01-20 03:29:06.830723'),(18,'admin','0003_logentry_add_action_flag_choices','2022-01-20 03:29:06.845215'),(19,'sessions','0001_initial','2022-01-20 03:29:06.901710'),(20,'shopapp','0002_notication_casee_notication_updated_date_and_more','2022-01-20 03:29:07.035803'),(21,'shopapp','0003_alter_user_cart','2022-01-20 03:29:07.051791'),(22,'shopapp','0004_order_active','2022-01-20 03:29:07.106045'),(23,'shopapp','0005_product_content','2022-01-20 03:29:07.146620'),(24,'shopapp','0006_order_phone','2022-01-20 03:29:07.185560'),(25,'shopapp','0007_alter_user_cart','2022-01-20 03:29:07.207508'),(26,'shopapp','0008_alter_order_product_id','2022-01-20 03:29:07.228509'),(27,'shopapp','0009_alter_product_product_price','2022-01-20 03:29:07.347936'),(28,'shopapp','0010_alter_product_product_price','2022-01-20 03:29:07.704906'),(29,'shopapp','0011_alter_product_product_price','2022-01-20 03:29:07.935157'),(30,'shopapp','0012_alter_product_product_price','2022-01-20 03:29:08.057572'),(31,'shopapp','0013_alter_product_product_price','2022-01-20 03:29:08.183776'),(32,'shopapp','0014_alter_product_product_price','2022-01-20 03:29:08.336647');
 /*!40000 ALTER TABLE `django_migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -204,7 +204,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('0kfmakpcb9rbi47fl76tmm80p5v3kyrg','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1nABS8:UzynJjjFqTrOHYPnuq1TDziEPYpDIBKd1SGM_E04TcE','2022-02-02 13:56:44.770128'),('f2ysfyy7rolzbw746b07kl1klcqh5qgq','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1n9rCh:4MEZBrMYRYWxyQJpc3CAsElI4oFz63ye3043pi9wnvY','2022-02-01 16:19:27.519912'),('iplxqmxy5wsjutuvdprhsyev6kr899nh','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1n8mSU:zx2u_mNEtEYQq8Kf_PhKS3lIEq471NSklBXl530QpYI','2022-01-29 17:03:18.823250'),('lb9nq0nb69p04oan568ctg6brgc022in','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1n8ltS:K-F7reR8EVRX6RQjf7Sv8CL0Y0wDghVGgtHmHIKYskk','2022-01-29 16:27:06.218571'),('xz6gfjfjc9wyu5wivs3ed73ln6mpnl3s','.eJxVjEEOgjAQRe_StWlmBGZal-45A5m2g0VNSSisjHdXEha6_e-9_zKDbGsetqrLMCVzMWhOv1uQ-NCyg3SXcpttnMu6TMHuij1otf2c9Hk93L-DLDV_a5WRwGHqfGw9NegBz-BdUkVCR-o8AwhTjKyOAnNgaMauawWUsGXz_gDBZDbI:1nA2qv:KPkTKkQzjMFTHSWsc5pepOuCd681tIYhz0WIOgKx5WQ','2022-02-02 04:45:45.794258');
+INSERT INTO `django_session` VALUES ('j1byt8pkex4ypf16sa00c292tou0iu7g','.eJxVjDsOwjAQBe_iGlm2E_8o6TmDtetd4wBypDipEHeHSCmgfTPzXiLBtta0dV7SROIstDj9bgj5wW0HdId2m2We27pMKHdFHrTL60z8vBzu30GFXr-18S7bMLIZPVuFYAORR4agiyNntQaNHpEGq6JmxRRiyaVEP7hsFIF4fwDoCzhl:1nAOA2:4fwvaAT97FInNvzF6DUImX7Oy-MrQ_4U-pqCgPCLG_w','2022-02-03 03:30:54.733052');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -227,7 +227,7 @@ CREATE TABLE `shopapp_notication` (
   PRIMARY KEY (`id`),
   KEY `shopapp_notication_user_id_3a65e750_fk_shopapp_user_id` (`user_id`),
   CONSTRAINT `shopapp_notication_user_id_3a65e750_fk_shopapp_user_id` FOREIGN KEY (`user_id`) REFERENCES `shopapp_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -236,7 +236,7 @@ CREATE TABLE `shopapp_notication` (
 
 LOCK TABLES `shopapp_notication` WRITE;
 /*!40000 ALTER TABLE `shopapp_notication` DISABLE KEYS */;
-INSERT INTO `shopapp_notication` VALUES (1,1,'Đơn hàng số 1 đã được chấp nhận',0,'2022-01-16',4,'null','2022-01-16'),(2,1,'Đơn hàng số 2 đã được chấp nhận',0,'2022-01-16',3,'null','2022-01-16'),(3,1,'Đơn hàng số 3 đã bị từ chối',0,'2022-01-16',5,'null','2022-01-16'),(4,1,'Đơn hàng số 4 đã bị từ chối',0,'2022-01-18',2,'null','2022-01-18'),(5,1,'Đơn hàng số 6 đã được chấp nhận',0,'2022-01-19',3,'null','2022-01-19'),(6,1,'Đơn hàng số 5 đã được chấp nhận',0,'2022-01-19',3,'null','2022-01-19'),(7,1,'Đơn hàng số 7 đã được chấp nhận',0,'2022-01-19',3,'null','2022-01-19'),(8,1,'Đơn hàng số 9 đã được chấp nhận',0,'2022-01-19',3,'null','2022-01-19'),(9,1,'Đơn hàng số 8 đã bị từ chối',0,'2022-01-19',2,'null','2022-01-19'),(10,1,'Đơn hàng số 10 đã bị từ chối',0,'2022-01-19',2,'null','2022-01-19'),(11,1,'Đơn hàng số 11 đã bị từ chối',0,'2022-01-19',2,'null','2022-01-19'),(12,1,'Đơn hàng số 12 đã bị từ chối',0,'2022-01-19',2,'null','2022-01-19'),(13,1,'Đơn hàng số 13 đã được chấp nhận',0,'2022-01-19',3,'null','2022-01-19'),(14,1,'Đơn hàng số 14 đã bị từ chối',0,'2022-01-19',3,'null','2022-01-19'),(15,1,'Đơn hàng số 15 đã bị từ chối',0,'2022-01-19',10,'null','2022-01-19'),(16,1,'Đơn hàng số 16 đã bị từ chối',0,'2022-01-19',10,'null','2022-01-19'),(17,1,'Đơn hàng đã bị từ chối',0,'2022-01-19',10,'null','2022-01-19'),(18,1,'Đơn hàng đã bị từ chối',0,'2022-01-19',10,'null','2022-01-19');
+INSERT INTO `shopapp_notication` VALUES (1,1,'Đơn hàng của bạn đã bị từ chối',0,'2022-01-20',5,'null','2022-01-20');
 /*!40000 ALTER TABLE `shopapp_notication` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -256,7 +256,7 @@ CREATE TABLE `shopapp_order` (
   PRIMARY KEY (`id`),
   KEY `shopapp_order_user_id_8d665b62_fk_shopapp_user_id` (`user_id`),
   CONSTRAINT `shopapp_order_user_id_8d665b62_fk_shopapp_user_id` FOREIGN KEY (`user_id`) REFERENCES `shopapp_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -265,7 +265,7 @@ CREATE TABLE `shopapp_order` (
 
 LOCK TABLES `shopapp_order` WRITE;
 /*!40000 ALTER TABLE `shopapp_order` DISABLE KEYS */;
-INSERT INTO `shopapp_order` VALUES (1,123134124,4,0,NULL),(2,123134124,3,0,NULL),(3,123134124,3,0,NULL),(4,123134124,3,0,NULL),(5,59000,3,0,NULL),(6,100000,3,0,NULL),(7,68000,3,0,NULL),(8,39000,3,0,NULL),(9,54000,3,0,NULL),(10,183000,3,0,NULL),(11,62000,3,0,NULL),(12,62000,3,0,NULL),(13,54000,3,0,NULL),(14,54000,3,0,NULL),(15,120000,10,0,NULL),(16,54000,10,0,NULL),(17,3800010000,10,0,NULL),(18,5200010000,10,0,NULL);
+INSERT INTO `shopapp_order` VALUES (1,2380000,5,0,NULL),(2,310000,5,1,NULL);
 /*!40000 ALTER TABLE `shopapp_order` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -310,13 +310,12 @@ CREATE TABLE `shopapp_product` (
   `avatar` varchar(100) NOT NULL,
   `created_date` date NOT NULL,
   `updated_date` date NOT NULL,
-  `product_price` varchar(250) NOT NULL,
+  `product_price` double NOT NULL,
   `active` tinyint(1) NOT NULL,
   `content` longtext,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `product_name` (`product_name`),
-  UNIQUE KEY `shopapp_product_product_price_f1d4e004_uniq` (`product_price`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  UNIQUE KEY `product_name` (`product_name`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -325,7 +324,7 @@ CREATE TABLE `shopapp_product` (
 
 LOCK TABLES `shopapp_product` WRITE;
 /*!40000 ALTER TABLE `shopapp_product` DISABLE KEYS */;
-INSERT INTO `shopapp_product` VALUES (1,'Richy Bơ Trứng Hộp 270gx16','img/2022/01/12.-Richy-Bơ-Trứng-Hộp-270gx16-copy.jpg','2022-01-18','2022-01-18','44000',1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(2,'Bánh quy bơ Danisa','img/2022/01/Bánh_quy_bơ_Danisa.jfif','2022-01-18','2022-01-18','52000',1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(5,'Bánh bông lan sợi thịt gà orion C\'est Bon','img/2022/01/bánh_bông_lan_sợi_thịt_gà_orion_Cest_Bon.jpg','2022-01-18','2022-01-19','38000',1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(6,'Bánh Choco-pie Orion dark','img/2022/01/Banh_Choco-pie_Orion_dark.jpg','2022-01-18','2022-01-18','49000',1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(7,'bánh quy LU','img/2022/01/bánh_quy_LU.jpg','2022-01-18','2022-01-18','58000',1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(8,'Bánh Choco-pie Orion','img/2022/01/Banh_Choco-pie_Orion.jfif','2022-01-18','2022-01-18','42000',1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(9,'Bánh Choco-pie Orion matcha','img/2022/01/Banh_Choco-pie_Orion_matcha.jfif','2022-01-18','2022-01-18','46000',1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(10,'Bánh bông lan cuộn kem socola và lá dứa Solite','img/2022/01/Bánh_bông_lan_cuộn_kem_socola_và_lá_dứa_Solite.jpeg','2022-01-18','2022-01-18','33000',1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(11,'bánh quy bơ kẹp  cosy','img/2022/01/bánh_quy_bơ_kẹp__cosy.jpg','2022-01-18','2022-01-18','29000',1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(12,'Vinfast-President','img/2022/01/VinFast-President-1-9915-1596526753.jpg','2022-01-19','2022-01-19','3000000000',1,'Xe đẹp'),(13,'Kawasaki Ninja H2','img/2022/01/kawasaki-ninja-h2-4k-qu-1536x864.jpg','2022-01-19','2022-01-19','1 tỷ 2',1,'PKL'),(14,'Xe Lắc','img/2022/01/xe-lac-tay-cho-be-f05-4.jpg','2022-01-19','2022-01-19','350000',1,'Xe lắc cho bé');
+INSERT INTO `shopapp_product` VALUES (1,'Hộp quà tết trường tồn','img/2022/01/Hop-Qua-Tet-Truong-Ton-2021-1_bJMXg7h.jpg','2022-01-20','2022-01-20',2370000,1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(2,'Giỏ Quà Tết Như Ý ( Miền Bắc)','img/2022/01/như_ý_cff355dc-07c6-4776-ad7e-23481fdd073b.png','2022-01-20','2022-01-20',300000,1,'Gói trọn những tinh hoa văn hóa bao đời của người Việt, những giỏ quà Tết thay cho lời gửi gắm lời chúc năm mới Bình An, May Mắn, Đoàn Viên, Như Ý, Phú Quý... Những món quà được lựa chọn tuy quen thuộc nhưng hài hòa, bắt mắt và trang trọng. Với sự phong phú về mẫu mã và đa dạng về mức giá, khách hàng có thể dễ dàng lựa chọn một giỏ quà phù hợp để dành tặng những người thân yêu. Giỏ quà Tết Như Ý sẽ là lời nhắn gửi ý nghĩa để mùa Tết Nhâm Dần thêm trọn vẹn.'),(3,'Cá hồi cắt lát Oceangift khay 200g HSD còn 1 năm','img/2022/01/ca-hoi-cat-lat-oceangift-khay-200g-202107031020496993_AOX6qaK.jpg','2022-01-20','2022-01-20',120000,1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(4,'Thùng 24 lon nước ngọt Coca Cola Plus 320ml','img/2022/01/thung-24-lon-nuoc-ngot-coca-cola-plus-320ml-202103202215288547_300x300_qVxBvet.jpg','2022-01-20','2022-01-20',333333,1,''),(5,'Lốc 5 tặng 1 bánh flan Ánh Hồng hũ LỚN 100g','img/2022/01/loc-5-tang-1-banh-flan-anh-hong-hu-lon-100g-202201171647258141_300x300_q0yE4LI.jpg','2022-01-20','2022-01-20',125000,1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(6,'Khăn ướt cồn Let-green sạch khuẩn sạch vết bẩn bịch 50 miếng','img/2022/01/khan-uot-con-let-green-sach-khuan-sach-vet-ban-bich-50-mieng-202104201653508_n7zfAPL.jpg','2022-01-20','2022-01-20',20000,1,'Đây là 1 trong những mặt hàng đưuọc giao bán tại myshop, 1 trang Web uy tín được thực hiện bởi nhóm 11 K64A4 gồm các thành viên : Nguyễn Hoài Nam, Dương Tùng Anh, Đỗ Xuân Mạnh.'),(7,'Miếng lót sơ sinh Bobby Newborn 108 miếng (cho bé dưới 1 tháng)','img/2022/01/mieng-lot-so-sinh-bobby-newborn-108-mieng-cho-be-duoi-1-thang-20210428234725_MzuW3bY.jpg','2022-01-20','2022-01-20',143000,1,''),(8,'Hộp 12 cái bao cao su Durex Kingtex 49mm','img/2022/01/hop-12-cai-bao-cao-su-durex-kingtex-49mm-202103022225334635_300x300.jpg','2022-01-20','2022-01-20',114000,1,''),(9,'Bánh quy bơ Danesita hộp 454g','img/2022/01/banh-quy-bo-vi-truyen-thong-danesita-hop-454g-tet-202112280925329814_7yVfEGJ.jpg','2022-01-20','2022-01-20',222222,1,''),(10,'Thùng 48 bịch sữa tiệt trùng có đường Dutch Lady Canxi & Protein 220ml','img/2022/01/thung-48-bich-sua-tiet-trung-co-duong-dutch-lady-canxi-protein-220ml-2021051_JYz2PPy.jpg','2022-01-20','2022-01-20',365000,1,''),(11,'Bia Sapporo Premium lon 330ml','img/2022/01/162427520073410012014-LON-Loc-6-lon-bia-saporo-Premium-650ml.jpg','2022-01-20','2022-01-20',16000,1,'Bia Sapporo Premium lon 330ml được sản phẩm từ các nguyên liệu cao cấp, tinh khiết, cho ra sản phẩm chất lượng, hương vị thơm ngon.\r\n\r\nThông tin sản phẩm\r\nThương hiệu: Sapporo (Nhật Bản)\r\nDung tích: 330ml\r\nĐóng gói: Thùng 24 lon\r\nBia Sapporo Premium lon 330ml được sản xuất trên dây chuyền công nghệ hiện đại, được giám sát, kiểm soát chặt chẽ từ nguyên liệu đầu vào, chế biến, đóng gói đảm bảo tạo ra sản phẩm chất lượng và an toàn cho người sử dụng.\r\n\r\nBia Sapporo được thiết kế dạng lon nhỏ gọn, dễ dàng mang theo bên mình khi đi chơi, dã ngoại, picnic... Phục vụ nhu cầu giải khát của bạn mọi thời điểm. Bia thích hợp cho những dịp tụ tập bạn bè hay vui chơi, liên hoan, tiệc cuối tuần...\r\n\r\nChú ý khi sử dụng\r\n\r\nSử dụng cho người từ 18 tuổi trở lên.\r\nKhông dùng cho phụ nữ có thai.\r\nĐã uống rượu bia thì không lái xe.\r\nHướng dẫn sử dụng và bảo quản\r\nUống trực tiếp và ngon hơn khi uống lạnh.\r\nBảo quản nơi khô ráo, thoáng mát và tránh ánh sáng mặt trời.\r\nLưu ý:\r\n\r\n- Hạn sử dụng thực tế quý khách vui lòng xem trên bao bì.\r\n\r\n- Hình sản phẩm chỉ mang tính chất minh họa, hình thực tế bao bì của sản phẩm tùy thời điểm sẽ khác so với thực tế.\r\n\r\nThông tin\r\nXuất Xứ\r\n\r\nVietnam\r\n\r\nThành Phần\r\n\r\nGhi trên bao bì sản phẩm\r\n\r\nHướng Dẫn Sử Dụng\r\n\r\nDùng trực tiếp'),(12,'Nho đen không hạt Mỹ','img/2022/01/162427183301910240912-KG-Nho-den-khung-hat-MyVMNK.jpg','2022-01-20','2022-01-20',240000,1,'Nho đen không hạt Mỹ là giống nho đen nổi tiếng nhất hiện nay, có độ cứng trái, ngọt và mọng nước. Đặc trưng nho đen có vỏ dày hơn, nên sẽ có độ chát nhẹ xen kẽ. Nho đen giàu vitamin A, vitamin C, vitamin K cùng với flavonoid giúp tăng cường hệ miễn dịch.\r\n\r\nNho đen không hạt Mỹ có resveratrol, một loại phenol tự nhiên có trong nho đen chịu trách nhiệm làm tăng bài tiết insulin và sự nhạy cảm với insulin, qua đó kiểm soát và duy trì lượng đường trong máu.\r\n\r\nNgoài ra, nho đen có chứa lutein và zeaxanthin, cả hai đều là carotenoid được biết đến để giúp duy trì một thị lực tốt. Nho đen sẽ bảo vệ mắt bằng cách bảo vệ chống lại sự oxy hóa của võng mạc và cũng ngăn ngừa chứng mù loà. Thường xuyên ăn nho đen cũng giúp cải thiện trí nhớ cũng như hỗ trợ chữa đau nửa đầu, chứng suy giảm trí nhớ và ngăn ngừa bệnh Alzheimer. Các chất trong nho đen hoạt động như một chất bảo vệ não.\r\n\r\nĐặc biệt, các loại nho đen còn có đặc tính chống đột biến và chống oxy hoá rất hiệu quả trong việc ngăn ngừa các nguy cơ bị ung thư.\r\n\r\nHướng dẫn sử dụng:\r\nRửa nhẹ nhàng trái nho để loại bỏ lớp phấn trắng trên vỏ.\r\nKhông nên rửa nho trước khi bảo quản trong ngăn mát tủ lạnh vì nếu rửa trước nho sẽ dễ bị hư, thối.\r\nChỉ nên rửa một lượng vừa đủ ăn.\r\nNho đen có thể ăn trực tiếp, làm nước ép, sinh tố, làm bánh.\r\nLưu ý:\r\n\r\n- Hạn sử dụng thực tế quý khách vui lòng xem trên bao bì.\r\n\r\n- Hình sản phẩm chỉ mang tính chất minh họa, hình thực tế bao bì của sản phẩm tùy thời điểm sẽ khác so với thực tế.');
 /*!40000 ALTER TABLE `shopapp_product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -352,7 +351,7 @@ CREATE TABLE `shopapp_user` (
   `role` varchar(50) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -361,7 +360,7 @@ CREATE TABLE `shopapp_user` (
 
 LOCK TABLES `shopapp_user` WRITE;
 /*!40000 ALTER TABLE `shopapp_user` DISABLE KEYS */;
-INSERT INTO `shopapp_user` VALUES (1,'pbkdf2_sha256$320000$RiTBCD3K7iKgqi13OB6QqZ$As05c8lHS9hG8MFD1xMbACWcC/StXqQUawJm5ppZ56A=','2022-01-19 13:56:44.764146',1,'admin','','','doxuanmanh@gmail.com',1,1,'2022-01-15 16:26:38.876917','',''),(2,'admin','2022-01-15 16:32:13.000000',0,'manh_admin','','','',0,1,'2022-01-15 16:32:07.000000','123456789','admin'),(3,'hnhy',NULL,0,'hnhy','','','',0,1,'2022-01-15 16:33:30.761834','0354137873','user'),(4,'12345',NULL,0,'manh','','','',0,1,'2022-01-15 17:23:00.767877','12345','user'),(5,'admin1','2022-01-15 17:48:10.000000',0,'admin1','','','',0,1,'2022-01-15 17:48:00.000000','12345','admin'),(7,'123',NULL,0,'manh29','','','',0,1,'2022-01-15 17:49:36.494225','123','user'),(9,'hnhy123123',NULL,0,'hnhy213123','','','',0,1,'2022-01-19 06:09:19.808357','123123','user'),(10,'123',NULL,0,'manhdzai','','','',0,1,'2022-01-19 13:47:47.753821','','user');
+INSERT INTO `shopapp_user` VALUES (1,'pbkdf2_sha256$320000$zRPKBfJdYo1es9aw6vAe0f$wY2jyb2jXDCLU8QYUfdC+UAsj1XAxH3fUBBVdMqft4Y=','2022-01-20 03:30:54.727073',1,'admin','','','manhdop01@gmail.com',1,1,'2022-01-20 03:30:39.418479','',''),(4,'123456','2022-01-20 03:32:46.000000',0,'adminweb','','','sonngu@gmail.com',0,1,'2022-01-20 03:32:38.000000','123','admin'),(5,'123',NULL,0,'manhdzai','','','',0,1,'2022-01-20 03:34:01.379920','0354137873','user');
 /*!40000 ALTER TABLE `shopapp_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -381,7 +380,7 @@ CREATE TABLE `shopapp_user_cart` (
   KEY `shopapp_user_cart_product_id_924e6b22_fk_shopapp_product_id` (`product_id`),
   CONSTRAINT `shopapp_user_cart_product_id_924e6b22_fk_shopapp_product_id` FOREIGN KEY (`product_id`) REFERENCES `shopapp_product` (`id`),
   CONSTRAINT `shopapp_user_cart_user_id_e5948b6b_fk_shopapp_user_id` FOREIGN KEY (`user_id`) REFERENCES `shopapp_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -390,7 +389,7 @@ CREATE TABLE `shopapp_user_cart` (
 
 LOCK TABLES `shopapp_user_cart` WRITE;
 /*!40000 ALTER TABLE `shopapp_user_cart` DISABLE KEYS */;
-INSERT INTO `shopapp_user_cart` VALUES (12,2,10),(31,3,5),(32,3,6),(35,3,14);
+INSERT INTO `shopapp_user_cart` VALUES (3,5,7);
 /*!40000 ALTER TABLE `shopapp_user_cart` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -459,4 +458,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-19 21:40:18
+-- Dump completed on 2022-01-20 11:17:19

@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: myshop
+-- Host: 127.0.0.1    Database: shopmanh
 -- ------------------------------------------------------
 -- Server version	8.0.27
 
@@ -16,32 +16,31 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `shopapp_order`
+-- Table structure for table `shopapp_order_product_id`
 --
 
-DROP TABLE IF EXISTS `shopapp_order`;
+DROP TABLE IF EXISTS `shopapp_order_product_id`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `shopapp_order` (
+CREATE TABLE `shopapp_order_product_id` (
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `order_price` double NOT NULL,
-  `user_id` bigint NOT NULL,
-  `active` tinyint(1) NOT NULL,
-  `phone` varchar(11) DEFAULT NULL,
+  `order_id` bigint NOT NULL,
+  `product_id` bigint NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `shopapp_order_user_id_8d665b62_fk_shopapp_user_id` (`user_id`),
-  CONSTRAINT `shopapp_order_user_id_8d665b62_fk_shopapp_user_id` FOREIGN KEY (`user_id`) REFERENCES `shopapp_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  UNIQUE KEY `shopapp_order_product_id_order_id_product_id_08e7ffed_uniq` (`order_id`,`product_id`),
+  KEY `shopapp_order_produc_product_id_bfea8204_fk_shopapp_p` (`product_id`),
+  CONSTRAINT `shopapp_order_produc_product_id_bfea8204_fk_shopapp_p` FOREIGN KEY (`product_id`) REFERENCES `shopapp_product` (`id`),
+  CONSTRAINT `shopapp_order_product_id_order_id_9acc84aa_fk_shopapp_order_id` FOREIGN KEY (`order_id`) REFERENCES `shopapp_order` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `shopapp_order`
+-- Dumping data for table `shopapp_order_product_id`
 --
 
-LOCK TABLES `shopapp_order` WRITE;
-/*!40000 ALTER TABLE `shopapp_order` DISABLE KEYS */;
-INSERT INTO `shopapp_order` VALUES (1,123134124,4,0,NULL),(2,123134124,3,0,NULL),(3,123134124,3,0,NULL),(4,123134124,3,0,NULL),(5,59000,3,0,NULL),(6,100000,3,0,NULL),(7,68000,3,0,NULL),(8,39000,3,0,NULL),(9,54000,3,0,NULL),(10,183000,3,0,NULL),(11,62000,3,0,NULL),(12,62000,3,0,NULL),(13,54000,3,0,NULL),(14,54000,3,0,NULL),(15,120000,10,0,NULL),(16,54000,10,0,NULL),(17,3800010000,10,0,NULL),(18,5200010000,10,0,NULL);
-/*!40000 ALTER TABLE `shopapp_order` ENABLE KEYS */;
+LOCK TABLES `shopapp_order_product_id` WRITE;
+/*!40000 ALTER TABLE `shopapp_order_product_id` DISABLE KEYS */;
+/*!40000 ALTER TABLE `shopapp_order_product_id` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -53,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-19 21:39:47
+-- Dump completed on 2022-01-20 11:16:30
